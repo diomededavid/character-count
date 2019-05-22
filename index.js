@@ -12,9 +12,10 @@ let characterCount = document.querySelector('#character-count');
 
 
 
-textInput.addEventListener('keyup', function(event) {
-    if (textInput.value.length < 1) return;
-
+textInput.addEventListener('keyup', function (event) {
+  if (textInput.value.length < 1) return;
+  
+  if (textInput.value) {
     characterCount.innerHTML = textInput.value.length;
-
-})
+  }
+});
